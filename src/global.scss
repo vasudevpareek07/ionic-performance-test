@@ -24,3 +24,80 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+$primary-color: #6134EE;
+
+$light: #F4F4F4;
+
+$lighter: rgba(0, 0, 0, 0.2);
+
+$lightest: white;
+
+$dark-red: #F6070D;
+
+$dark-gray: gray;
+
+//margin & padding
+$space-xxs: 4px;
+
+$space-xs: 8px;
+
+$space-sm: 12px;
+
+$space-md: 16px;
+
+$space-lg: 20px;
+
+//font-sizes
+$font-sm: 14px;
+
+
+//box-shadow
+$bs-md: 5px;
+$bs-neg-sm: -3px;
+
+body{
+    overflow: hidden;
+    margin: 0;
+}
+
+//helper classes
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item-fixed{
+    flex: 0 0 auto;
+}
+
+.flex-item-balloon{
+    flex: 1 1 0;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+.flex-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.tall-div{
+    height: 100%;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
