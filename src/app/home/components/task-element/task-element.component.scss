@@ -1,0 +1,40 @@
+@import "../../../../global.scss";
+
+.message-block-parent{
+    padding-bottom: $space-md;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: $space-md;
+    background-color: $lightest;
+
+    .author-image-block{
+        height: 45px;
+        width: 45px;
+        margin-right: $space-sm;
+    }
+
+    .author-name{
+        margin-bottom: $space-xxs;
+    }
+
+    .updated-time{
+        color: $dark-gray;
+        font-size: $font-sm;
+    }
+
+    .content{
+        margin-top: $space-md;
+    }
+
+    .options-icon{
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+        color: var(--ion-color-primary);
+    }
+
+    .delete-icon{
+        height: 20px;
+        width: 20px;
+        color: red;
+    }
+}

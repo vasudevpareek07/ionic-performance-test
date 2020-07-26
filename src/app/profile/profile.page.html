@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div class="profile-page-parent">
+      <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/avatar.svg">
+          </ion-avatar>
+          <ion-label>
+            <h3>{{username}}</h3>
+            <p>{{role}}</p>
+            <ion-button size="small" (click)="presentModal()">More</ion-button>
+          </ion-label>
+      </ion-item>
+    </div>
+</ion-content>

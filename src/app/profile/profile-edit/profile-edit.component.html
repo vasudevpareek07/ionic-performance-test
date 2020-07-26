@@ -1,0 +1,15 @@
+
+<div class="edit-profile-header flex-row">
+    <div class="header flex-item-balloon">Edit Profile</div>
+    <div class="action flex-item-fixed" (click)="dismiss()">Close</div>
+</div>
+<ion-content>
+  <div class="edit-profile-content">
+      <ion-input placeholder="Enter username" [value]="username" (ionChange)="setUsername($event)" required="true"></ion-input>
+      <ion-input placeholder="Enter Role" [value]="role" (ionChange)="setRole($event)" required="true"></ion-input>
+      <div class="update-btn">
+          <ion-button size="small" (click)="updateProfile()">Update Profile</ion-button>
+      </div>
+  </div>
+</ion-content>
+

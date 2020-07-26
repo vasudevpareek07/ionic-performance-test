@@ -1,0 +1,25 @@
+.edit-profile-header{
+    padding: 16px;
+    border-bottom: 1px solid #e8e8e8;
+    .header{
+        font-size: 16px;
+        text-align: center;
+    }
+    .action{
+        font-size: 14px;
+        color: var(--ion-color-primary);
+    }
+}
+
+.edit-profile-content{
+    padding: 16px;
+
+    .update-btn{
+        text-align: center;
+    }
+}
+
+ion-input{
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+}

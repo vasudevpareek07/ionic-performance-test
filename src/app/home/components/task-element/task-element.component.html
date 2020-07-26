@@ -1,0 +1,20 @@
+<div class="message-block-parent">
+
+    <div class="flex-row flex-center">
+        <ion-avatar slot="start" class="author-image-block">
+            <img src="assets/avatar.svg">
+        </ion-avatar>
+        <!-- <img src="assets/user.png" class="flex-item-fixed author-image-block" alt="loading..."> -->
+        <div class="flex-item-balloon">
+            <div class="author-name text-bold">{{message.author.name}}</div>
+            <div class="updated-time">{{message.updated}}</div>
+        </div>
+        <div class="flex-item-fixed flex-row flex-align-center">
+            <ion-icon name="ellipsis-horizontal-circle-outline" class="options-icon" (click)="presentActionSheet()"></ion-icon>
+            <ion-icon name="trash-outline" class="delete-icon" (click)="presentAlertConfirm()"></ion-icon>
+        </div>
+    </div>
+
+    <div class="content">{{message.content}}</div>
+
+</div>

@@ -1,0 +1,30 @@
+<div class="dashboard-parent flex-column">
+    <div class="flex-item-fixed segmented-bar-header">
+        <ion-segment (ionChange)="segmentChanged($event)" value="{{selectedSegment}}">
+        <ion-segment-button value="mytasks">
+            <ion-label>My Tasks</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="alltasks">
+            <ion-label>All Tasks</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="pendingtasks">
+              <ion-label>Pending Tasks</ion-label>
+          </ion-segment-button>
+        </ion-segment> 
+    </div>
+
+    <div class="message-list flex-item-balloon">
+        <div class="flex-column flex-center tall-div" *ngIf="showLoader">
+          <ion-spinner color="primary"></ion-spinner>
+        </div>
+        <ion-content [fullscreen]="true" class="ion-padding" *ngIf="messages.length>0">
+            <ng-container *ngFor="let message of messages; let i=index; trackBy:trackByFn">
+                <app-task-element [message]="message" [index]="i" (deleteMessage)="deleteMessage($event)"></app-task-element>
+            </ng-container>
+            <ion-infinite-scroll (ionInfinite)="getMoreMessages($event)">
+              <ion-infinite-scroll-content loadingText="Loading more data..." color="primary">
+              </ion-infinite-scroll-content>
+            </ion-infinite-scroll>
+        </ion-content>
+     </div>
+</div> 
